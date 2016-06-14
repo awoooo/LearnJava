@@ -11,7 +11,7 @@ public class StringSplit {
 		}
 	}
 
-	private static String[] strSplit( String str, int position) {
+	public static String[] strSplit( String str, int position) {
 		String[] firstArr;
 		firstArr = str.replaceAll(" ", "").split(";");
 		int count = firstArr.length;
@@ -23,7 +23,7 @@ public class StringSplit {
 		return strArr;
 	}
 
-	private static int[] str2intArr( String[] str) {
+	public static int[] str2intArr( String[] str) {
 		int count = str.length;
 		int[] num = new int[count];
 		for (int i=0; i<count; i++) {
@@ -36,7 +36,7 @@ public class StringSplit {
 		return num;
 	}
 
-	private static float[] str2floatArr( String[] str) {
+	public static float[] str2floatArr( String[] str) {
 		int count = str.length;
 		float[] num = new float[count];
 		for (int i=0; i<count; i++) {
